@@ -66,11 +66,14 @@ Ensure the server is properly configured to allow cross-origin requests.
 
 
 **Future Enhancements**
-Search and Filter: Implement a feature to search or filter payments based on criteria such as date range, amount, etc.
 
+Search and Filter: Implement a feature to search or filter payments based on criteria such as date range, amount, etc.
 Pagination: Add pagination to handle large data sets efficiently. 
 
 Enhanced Error Handling: Provide more user-friendly error messages when API requests fail.
-Contributing
+
+
+**Contributing**
+
 If you wish to contribute to this project, feel free to fork the repository and submit pull requests.
 
