@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gabarito", sans-serif;
+    font-weight: 500;
+ 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.heading{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.container{
+    margin-top: 20px;
+    padding: 1rem;
+
+}
+
+
+/* Table Styling */
+#paymentTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+#paymentTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#paymentTable th,
+#paymentTable td {
+    padding: 12px 15px;
+    font-size: 0.85rem; 
+}
+
+#paymentTable tbody {
+    border-bottom: 1px solid #dddddd;
+}
+
+#paymentTable tbody tr:nth-of-type(even){
+    background-color: #f9f9f9;
+}
+
+#paymentTable tbody tr:nth-last-of-type(){
+    border-bottom: 2px solid #009879;
+}
+
+#paymentTable tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+.view-btn {
+    color: #009879;
+    background-color: transparent;
+    border: 1px solid #009879;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    width:50px;
+
+}
+
+.view-btn:hover{
+    background-color: #009879;
+    color: #fff;
+}
+
+.view-btn:active{
+    background-color: #009879;
+    color: #fff;
+}
+
+
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+}
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.modal-header h1{
+    font-size: 2rem;
+}
+
+.paymentDisplay{
+    display: block;
+    margin-bottom: 20px;   
+}
+h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+p{
+    color: #009879;
+}
+
+
+/* table Display on Modal */
+.tableModal{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    font-size: medium;
+    border: 2px solid #009879;
+    border-radius: 10px;
+}
+
+.tableModal thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tableModal th,
+.tableModal td {
+    padding: 12px 15px;
+    font-size: 0.85rem;
+}
+.tableModal td{
+    
+    min-width: 180px;
+    border-right: 1px solid #ccc;
+}
+.tableModal tbody{
+    background-color: #fff;
+}
+
+.table-container{
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 16px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    
+    align-items: center;
+}
+
+
+.close-btn {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    
+    color: #ff0000;
+}
+
+
+
+/* Media Queries for Larger screens and desktops */
+@media screen and (min-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #paymentTable th,
+    #paymentTable td {
+    font-size: 1rem; 
+    }
+
+    .modal{
+        width: 100%;
+    }
+
+    .modal-content{
+        width: 50%;
+    }
+
+}
