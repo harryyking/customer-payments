@@ -28,6 +28,7 @@ paymentId: The ID of the specific payment you want to view details for.
 
 
 **Project Structure**
+
 /customer-payments-app
 │
 ├── index.html              # Main HTML file
@@ -39,10 +40,10 @@ paymentId: The ID of the specific payment you want to view details for.
 **Setup and Installation**
 
 Clone the repository:
-git clone https://github.com/your-username/customer-payments-app.git
+git clone https://github.com/your-username/customer-payments.git
+
+
 Navigate to the project directory:
-
-
 cd customer-payment
 Open index.html in your browser: Simply open the index.html file in a web browser to see the app in action.
 
@@ -59,7 +60,9 @@ JavaScript (Vanilla): Handling API requests and DOM manipulation.
 
 
 **Potential Issues**
-CORS Errors: Depending on your browser and the server setup, you may encounter CORS (Cross-Origin Resource Sharing) issues when fetching data from the API. Ensure the server is properly configured to allow cross-origin requests.
+
+CORS Errors: Depending on your browser and the server setup, you may encounter CORS (Cross-Origin Resource Sharing) issues when fetching data from the API.
+Ensure the server is properly configured to allow cross-origin requests.
 
 
 **Future Enhancements**
